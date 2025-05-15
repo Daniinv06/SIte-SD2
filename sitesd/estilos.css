@@ -1,0 +1,215 @@
+
+/*Cabeçalho */
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+.image-barra-saude {
+  width: 500px;
+  height: auto;
+  padding: 10px 20px;    
+}
+
+.image-logo-escola {
+  width: 350px;
+  height: auto;
+  padding: 10px 50px; 
+}
+
+body {
+  padding-top: 250px; 
+  background-color: #FCF9C5;
+}
+
+.logo-grande-principal {
+    width: 1200px;
+  height: auto;
+  margin-left: 200px;
+  margin-right: 10px;
+}
+.navbar-custom {
+      background-color: #FFD700; /* amarelo */
+      padding: 10px 20px;  
+      max-height: 120px;    
+    }
+
+    .newsletter-btn {
+      background-color: #e0e0e0;
+      padding: 10px 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Body */
+    .p {
+  margin-bottom: 16px; /* espaço entre parágrafos */
+  line-height: 1.6;    /* altura da linha para melhor leitura */
+}
+.menu-principal {
+    background-color: #C0C0C0; 
+      color: rgb(0, 0, 0);             
+      padding: 2rem;
+      border-radius: 1rem;       
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.botao-podcast {
+  text-align: left;
+  font-size: 30px;
+}
+
+.icones-container {
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.icone-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icone-item i {
+  font-size: 60px;
+  color: #333;
+}
+
+.icone-item p {
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 100px;
+  
+}
+
+.introducao {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 38px;
+  padding: 120px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  
+}
+
+.menu-toppodcast {
+  text-align: center;
+  font-size: 65px;
+  font-weight:bold ;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 40px;
+}
+
+.texto-toppodcast {
+text-align: center;
+margin-top: 40px;
+font-size: 40px;
+
+}
+
+.card {
+  text-align: center;
+
+}
+
+.menu-profissionais {
+  text-align: right;
+  font-size: 50px;
+  padding-right: 45px;
+  margin-bottom: 50px;
+  padding-top: 100px;
+}
+
+.raquelsimoes {
+  padding-top: 400px;
+  
+}
+
+
+  .duvidas-container {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .titulo-duvida {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .balao {
+    position: relative;
+    background-color: #bbb;
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .balao::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #bbb;
+    border-bottom: 0;
+    margin-left: -10px;
+  }
+
+  .balao-resposta {
+    background-color: #e6e6e6;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  .balao-resposta::after {
+    left: auto;
+    right: 30px;
+    border-top-color: #e6e6e6;
+    margin-left: 0;
+    margin-right: -10px;
+  }
+
+  .formulario {
+    margin-top: 60px;
+  }
+
+  .formulario p {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .formulario input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .formulario button {
+    padding: 10px 20px;
+    background-color: #f25e5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+  .texto-final {
+    padding-top: 100px;
+    text-align: center;  
+  }
