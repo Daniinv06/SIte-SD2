@@ -95,7 +95,7 @@ nav.navbar {
 
 .dropdown-menu .dropdown-item {
   color: #000;
-  text-align: center;
+  text-align: left;
 }
 
 .dropdown-menu .dropdown-item:hover,
@@ -104,38 +104,43 @@ nav.navbar {
   color: #000;
 }
 
+/*------------------- FIM Navbar -------------------*/
 
 
+.btn-primary {
+  background-color: #FFD932 !important;
+  border-color: #000000 !important;
+  color: #222 !important;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
 
-
-
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #ffbb00 !important;
+  border-color: #000000 !important;
+  color: #000 !important;
+}
 
 
 
 /*------------- Footer ------------*/
-
-
-/* ...existing code... */
-footer {
-  flex-shrink: 0;
-  width: 100vw;
-  margin: 0;
-  padding: 2vw 8vw 2vw 8vw;
-  background-color: #FFD932;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+footer
+{
+	padding: 2vw 8vw 2vw 8vw;	
+	background-color: #FFD932;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	max-height: max-content;
+	margin: 0;
+	
 }
-/* ...existing code... */
 
 
-/* ...existing code... */
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -144,17 +149,9 @@ body {
   flex-direction: column;
 }
 
-main, .container {
-  flex: 1 0 auto;
+main {
+  flex: 1;
 }
-
-footer {
-  flex-shrink: 0;
-  width: 100%;
- 
-  /* Se quiser sombra ou borda, adicione aqui */
-}
-/* ...existing code... */
 
 /* Footer normal, sem position: fixed */
 footer {
@@ -320,48 +317,3 @@ footer .copyright .pro-links i:hover
 
 /*------------- Footer ------------*/
 
-
-
-main {
-  padding-top: 80px; /* ajuste o valor conforme a altura da sua navbar */
-}
-
-
-
-
-
-
-
-
-
-
-body {
-      font-family: sans-serif;
-      background: #fff;
-      color: #333;
-    }
-
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-      margin-bottom: 1rem;
-    }
-
-    .datepicker-cell.bg-primary {
-      border-radius: 50%;
-    }
-
-    .nav-tabs .nav-link.active {
-      background-color: #0057b7;
-      color: white;
-    }
-
-    .nav-tabs .nav-link {
-      color: #0057b7;
-    }
-
-    #evento-info {
-      margin-top: 1rem;
-      font-weight: bold;
-    }

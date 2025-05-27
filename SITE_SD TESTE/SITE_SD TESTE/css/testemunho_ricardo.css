@@ -31,7 +31,9 @@ h6
 }
 
 
-
+body {
+  padding-top: 100px; /* ou o valor exato da altura da navbar */
+}
 
 
 /*------------------- Reset básico -------------------*/
@@ -95,7 +97,7 @@ nav.navbar {
 
 .dropdown-menu .dropdown-item {
   color: #000;
-  text-align: center;
+  text-align: left;
 }
 
 .dropdown-menu .dropdown-item:hover,
@@ -112,30 +114,107 @@ nav.navbar {
 
 
 
-/*------------- Footer ------------*/
+/*------------------- Testemunho -------------------*/
+/* Testemunho - Imagem em cima do texto */
 
-
-/* ...existing code... */
-footer {
-  flex-shrink: 0;
-  width: 100vw;
-  margin: 0;
-  padding: 2vw 8vw 2vw 8vw;
-  background-color: #FFD932;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+.testemunho-utente {
+  background: #dddddd;
+  margin-top: 120px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+  max-width: 1200px;
+  width: 100%;
   box-sizing: border-box;
+  margin-left: auto;   /* Adiciona esta linha */
+  margin-right: auto;  /* Adiciona esta linha */
 }
-/* ...existing code... */
+
+.testemunho-utente .container {
+  max-width: 1100px;    /* ou o valor que desejares */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testemunho-utente blockquote {
+  max-width: 1000px;    /* aumenta a largura do texto */
+  width: 100%;
+  margin: 0 auto;
+}
 
 
-/* ...existing code... */
+.testemunho-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img-raquel {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 16px;
+}
+
+
+.testemunho-utente p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #222;
+}
+
+.testemunho-utente .blockquote-footer {
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.titulo-pagina {
+  font-size: 50px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 0px;
+  margin-top: 100px; /* Espaço extra abaixo da navbar fixa */
+  text-align: center;
+  letter-spacing: 1px;
+
+}
+
+.nome-raquel {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #444;
+  margin: 18px 0 10px 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+/*------------- Footer ------------*/
+footer
+{
+	padding: 2vw 8vw 2vw 8vw;	
+	background-color: #FFD932;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	max-height: max-content;
+	margin: 0;
+	
+}
+
+
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -144,17 +223,9 @@ body {
   flex-direction: column;
 }
 
-main, .container {
-  flex: 1 0 auto;
+main {
+  flex: 1;
 }
-
-footer {
-  flex-shrink: 0;
-  width: 100%;
- 
-  /* Se quiser sombra ou borda, adicione aqui */
-}
-/* ...existing code... */
 
 /* Footer normal, sem position: fixed */
 footer {
@@ -318,50 +389,23 @@ footer .copyright .pro-links i:hover
   color: #000000;
 }
 
-/*------------- Footer ------------*/
 
 
-
-main {
-  padding-top: 80px; /* ajuste o valor conforme a altura da sua navbar */
+.newsletter-form button {
+  border: 2px solid #ffffff;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  outline: none;
 }
 
-
-
-
-
-
-
-
-
-
-body {
-      font-family: sans-serif;
-      background: #fff;
-      color: #333;
-    }
-
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-      margin-bottom: 1rem;
-    }
-
-    .datepicker-cell.bg-primary {
-      border-radius: 50%;
-    }
-
-    .nav-tabs .nav-link.active {
-      background-color: #0057b7;
-      color: white;
-    }
-
-    .nav-tabs .nav-link {
-      color: #0057b7;
-    }
-
-    #evento-info {
-      margin-top: 1rem;
-      font-weight: bold;
-    }
+.newsletter-form button:hover {
+  background-color: #ffbb00;
+  color: #000;
+  border-color: #000000;
+}
+/*------------- Footer ------------*/
